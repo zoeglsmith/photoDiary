@@ -1,0 +1,32 @@
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.nav-item button {
+  background-color: #fba5d0; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.nav-item button:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
