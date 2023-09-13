@@ -19,6 +19,9 @@ function NavBar() {
             Login
           </button>
         </li>
+        <li className="nav-item">
+          <button onClick={() => window.location.assign("/feed")}>Feed</button>
+        </li>
       </ul>
     </nav>
   );

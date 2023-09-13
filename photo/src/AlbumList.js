@@ -1,5 +1,5 @@
 import React from "react";
-import "./AlbumList.css";
+import "./AlbumList.modules.css";
 import { Card, Button, Form } from "react-bootstrap"; // Import Form from react-bootstrap
 import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate
 import NavBar from "./NavBar"; // Import the NavBar component

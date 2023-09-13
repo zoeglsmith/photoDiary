@@ -1,0 +1,60 @@
+/* Feed.module.css */
+.feed-container {
+  min-height: 100vh;
+  background-color: #ffdddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Change from 'center' to 'flex-start' */
+  align-items: center;
+  padding: 20px;
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0; /* Add padding to the header */
+  border-bottom: 1px solid #ccc; /* Add a border line below the header */
+}
+
+.add-post-icon {
+  font-size: 24px; /* Adjust the icon size as needed */
+  color: #3498db; /* Set the icon color */
+  cursor: pointer; /* Add a pointer cursor to indicate clickability */
+}
+
+.feed-post {
+  margin-top: 20px; /* Add spacing between posts */
+  border: 1px solid #ccc; /* Add a border around each post */
+  padding: 10px; /* Add padding inside each post */
+  width: 100%; /* Make posts take up the full width */
+}
+
+.profile-picture {
+  width: 50px; /* Set the profile picture size */
+  height: 50px;
+  border-radius: 50%; /* Make it round */
+  margin-right: 10px; /* Add spacing between picture and username */
+}
+
+.username {
+  font-size: 18px; /* Adjust the username font size */
+  font-weight: bold; /* Make it bold */
+}
+
+.post-image {
+  width: 500px; /* Make the post image take up the full width */
+  max-height: 500px; /* Limit the image height to prevent overflow */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin-top: 10px; /* Add spacing below the username */
+}
+
+.post-actions {
+  margin-top: 10px; /* Add spacing between image and actions */
+}
+
+.post-caption {
+  margin-top: 10px; /* Add spacing below actions */
+  font-size: 16px; /* Adjust the caption font size */
+}

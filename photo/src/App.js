@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./HomePage";
 import SignUp from "./SignUp";
 import Login from "./Login";
+import Feed from "./Feed";
 import Upload from "./UploadPhoto";
 import CreateAlbum from "./createAlbum";
 import AlbumList from "./AlbumList";
@@ -33,6 +34,7 @@ function App() {
             <Route path="/album-list" element={<AlbumList albums={albums} />} />
             <Route path="/view-album/:id" element={<ViewAlbum />} />{" "}
             <Route path="/upload" element={<Upload />} />
+            <Route path="/feed" element={<Feed />} />
             <Route path="/" element={<HomePage />} />
           </Routes>
         </main>
