@@ -4,24 +4,28 @@
   background-color: #ffdddd;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Change from 'center' to 'flex-start' */
+  justify-content: flex-start;
   align-items: center;
   padding: 20px;
 }
 
 .feed-header {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 10px 0; /* Add padding to the header */
-  border-bottom: 1px solid #ccc; /* Add a border line below the header */
 }
 
 .add-post-icon {
-  font-size: 24px; /* Adjust the icon size as needed */
-  color: #3498db; /* Set the icon color */
-  cursor: pointer; /* Add a pointer cursor to indicate clickability */
+  font-size: 24px;
+  color: #3498db;
+
+  cursor: pointer;
 }
 
 .feed-post {
