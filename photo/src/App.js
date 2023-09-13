@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./HomePage";
 import SignUp from "./SignUp";
 import Login from "./Login";
+import Upload from "./UploadPhoto";
+import CreateAlbum from "./createAlbum";
+import AlbumList from "./AlbumList";
+import ViewAlbum from "./viewAlbum";
 
 function App() {
+  const [albums, setAlbums] = useState([]);
+  const createAlbum = (title) => {
+    const newAlbum = {
+      id: albums.length + 1,
+      title: title,
+    };
+    setAlbums([...albums, newAlbum]);
+  };
+
   return (
     <Router>
       <div className="App">
@@ -13,6 +26,13 @@ function App() {
           <Routes>
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
+            <Route
+              path="/create-album"
+              element={<CreateAlbum onCreateAlbum={createAlbum} />}
+            />
+            <Route path="/album-list" element={<AlbumList albums={albums} />} />
+            <Route path="/view-album/:id" element={<ViewAlbum />} />{" "}
+            <Route path="/upload" element={<Upload />} />
             <Route path="/" element={<HomePage />} />
           </Routes>
         </main>

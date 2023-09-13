@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card, Button, Form } from "react-bootstrap"; // Import Form from react-bootstrap
 import "./SignUp.css"; // Import your CSS file
 import NavBar from "./NavBar"; // Import the NavBar component
@@ -7,7 +8,7 @@ function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const handleSignup = () => {
     // Implement your signup logic here
     // You can access the values of name, email, and password from the state variables
@@ -15,6 +16,7 @@ function SignUp() {
     console.log("Name:", name);
     console.log("Email:", email);
     console.log("Password:", password);
+    navigate("/login");
   };
 
   return (

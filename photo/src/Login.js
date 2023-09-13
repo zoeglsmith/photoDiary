@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card, Button, Form } from "react-bootstrap"; // Import Form from react-bootstrap
 import "./SignUp.css"; // Import your CSS file
 import NavBar from "./NavBar"; // Import the NavBar component
@@ -6,10 +7,12 @@ import NavBar from "./NavBar"; // Import the NavBar component
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = () => {
     console.log("Email:", email);
     console.log("Password:", password);
+    navigate("/create-album");
   };
 
   return (
