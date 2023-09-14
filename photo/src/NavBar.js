@@ -22,6 +22,11 @@ function NavBar() {
         <li className="nav-item">
           <button onClick={() => window.location.assign("/feed")}>Feed</button>
         </li>
+        <li className="nav-item">
+          <button onClick={() => window.location.assign("/profile")}>
+            Profile
+          </button>
+        </li>
       </ul>
     </nav>
   );
