@@ -4,6 +4,9 @@ import HomePage from "./HomePage";
 import SignUp from "./SignUp";
 import Login from "./Login";
 import Feed from "./Feed";
+import UserProfile from "./UserProfile.js";
+import ViewProfile from "./ViewProfile.js";
+
 import Upload from "./UploadPhoto";
 import CreateAlbum from "./createAlbum";
 import AlbumList from "./AlbumList";
@@ -35,6 +38,8 @@ function App() {
             <Route path="/view-album/:id" element={<ViewAlbum />} />{" "}
             <Route path="/upload" element={<Upload />} />
             <Route path="/feed" element={<Feed />} />
+            <Route path="/profile" element={<UserProfile />} />
+            <Route path="/view-profile" element={<ViewProfile />} />
             <Route path="/" element={<HomePage />} />
           </Routes>
         </main>

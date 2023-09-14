@@ -5,7 +5,7 @@ import "./HomePage.module.css";
 function HomePage() {
   return (
     <div>
-      <NavBar /> {/* Include the NavBar component */}
+      <NavBar /> 
       <header>
         <h1>Welcome to Photo Diary</h1>
       </header>

@@ -1,0 +1,111 @@
+/* viewProfile.css */
+
+/* Container styles */
+.profile-container {
+  background-color: #ffdddd;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align content to the top */
+}
+
+/* Profile header styles */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 400px; /* Limit header width */
+  text-align: center;
+}
+
+/* Profile picture styles */
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+/* Profile picture image styles */
+.profile-picture img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Profile info styles */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  width: 100%;
+}
+/* Username container styles */
+.profile-username-container {
+  text-align: center;
+  background-color: #ffcccc; /* Background color for the username container */
+  padding: 10px; /* Adjust the padding as needed */
+  width: 100vw; /* Use viewport width to extend the container across the page */
+  margin-bottom: 8px;
+}
+/* Username styles */
+.profile-username {
+  font-size: 24px;
+  margin: 0; /* Remove margin from the h1 element */
+  line-height: 1.2; /* Adjust the line height to create two lines */
+}
+
+/* Edit profile button styles */
+.edit-profile-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Profile stats styles */
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 400px; /* Limit stats width */
+  text-align: center;
+}
+
+/* Stat styles */
+.stat {
+  text-align: center;
+  margin: 0 20px;
+}
+
+/* Stat count styles */
+.stat-count {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Profile bio styles */
+.profile-bio {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Limit bio width */
+}
+
+/* Profile posts styles */
+.profile-posts {
+  /* Add your own styles for displaying posts here */
+}
