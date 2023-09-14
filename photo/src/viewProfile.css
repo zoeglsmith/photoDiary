@@ -83,6 +83,7 @@
   width: 100%;
   max-width: 400px; /* Limit stats width */
   text-align: center;
+  width: 100vw; /* Use viewport width to extend the container across the page */
 }
 
 /* Stat styles */
